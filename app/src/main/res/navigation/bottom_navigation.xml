@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottom_navigation"
+    app:startDestination="@+id/navigation_reports">
+
+
+    <fragment
+        android:id="@+id/navigation_transactions"
+        android:name="com.dailyexpences.demo.ui.transactions.TransactionsFragment"
+        android:label="@string/title_transactions"
+        tools:layout="@layout/fragment_transactions" />
+
+    <fragment
+        android:id="@+id/navigation_budgets"
+        android:name="com.dailyexpences.demo.ui.budgets.BudgetsFragment"
+        android:label="@string/title_budgets"
+        tools:layout="@layout/fragment_budgets" />
+
+
+</navigation>
